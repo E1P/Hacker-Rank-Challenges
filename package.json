@@ -1,0 +1,16 @@
+{
+  "name": "hacker-rank",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "pre-commit": "jest && eslint .",
+    "test": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^24.7.1"
+  }
+}
