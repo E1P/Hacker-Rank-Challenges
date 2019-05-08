@@ -1,10 +1,18 @@
 module.exports = {
-  extends: "standard",
   env: {
-    jest: true
+    browser: true,
+    commonjs: true,
+    es6: true,
+    "jest/globals": true
   },
-  rules: {
-    "no-unused-vars": 1,
-    semi: 0
-  }
+  extends: "eslint:recommended",
+  globals: {
+    Atomics: "readonly",
+    SharedArrayBuffer: "readonly"
+  },
+  parserOptions: {
+    ecmaVersion: 2018
+  },
+  rules: {},
+  plugins: ["jest"]
 };
