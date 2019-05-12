@@ -27,7 +27,6 @@ const arrayManipulation = (n, queries) => {
     let k = queries[i][2];
     for (let j = a; j < b; j++) {
       zeroArray[j] = (zeroArray[j] || 0) + k;
-      console.log(zeroArray);
       if (zeroArray[j] > maximum) maximum = zeroArray[j];
     }
   }
