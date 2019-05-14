@@ -15,12 +15,12 @@ const sherlockAndAnagrams = string => {
   for (let i = 0; i < string.length; i++) {
     for (let j = i + 1; j <= string.length; j++) {
       // console.log("string: ", i, j, string.slice(i, j));
-      const sortedSubString = string
+      const sortedSubStr = string
         .slice(i, j)
         .split("")
         .sort()
         .join("");
-      letterComboTally[sortedSubString] = (letterComboTally[sortedSubString] || 0) + 1;
+      letterComboTally[sortedSubStr] = (letterComboTally[sortedSubStr] || 0) + 1;
     }
   }
   // console.log(letterComboTally);
