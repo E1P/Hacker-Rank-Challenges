@@ -22,4 +22,7 @@ describe("frequencyQueries()", () => {
   it("returns an array with one 1 when query contains single 3 with applicable frequency", () => {
     expect(frequencyQueries([[1, 1], [1, 2], [1, 1], [3, 2]])).toEqual([1]);
   });
+  it("passes sample input 0", () => {
+    expect(frequencyQueries([[1, 5], [1, 6], [3, 2], [1, 10], [1, 10], [1, 6], [2, 5], [3, 2]])).toEqual([0, 1]);
+  });
 });
